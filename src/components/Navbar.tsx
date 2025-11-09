@@ -22,7 +22,7 @@ export function Navbar() {
           />
           <div>
             <p className="display-text text-lg font-semibold text-neutral-900">
-              InstaFlow AI
+              Shoppal
             </p>
             <p className="text-[11px] uppercase tracking-[0.4em] text-neutral-400">
               DM AGENT
