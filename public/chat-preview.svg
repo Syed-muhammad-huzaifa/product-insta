@@ -1,0 +1,29 @@
+<svg width="480" height="360" viewBox="0 0 480 360" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="chatPreviewTitle">
+  <title id="chatPreviewTitle">Chat preview mock</title>
+  <defs>
+    <linearGradient id="panel" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#fdf3ff"/>
+      <stop offset="100%" stop-color="#f1f5ff"/>
+    </linearGradient>
+    <linearGradient id="bubbleHot" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f58529"/>
+      <stop offset="50%" stop-color="#dd2a7b"/>
+      <stop offset="100%" stop-color="#515bd4"/>
+    </linearGradient>
+  </defs>
+  <rect x="20" y="20" width="440" height="320" rx="28" fill="url(#panel)" stroke="#f0daf9" stroke-width="2"/>
+  <rect x="50" y="50" width="150" height="30" rx="15" fill="#fff" stroke="#f0daf9"/>
+  <rect x="50" y="95" width="220" height="70" rx="18" fill="#fff" stroke="#f0daf9"/>
+  <rect x="60" y="110" width="160" height="12" rx="6" fill="#b08dda" opacity="0.8"/>
+  <rect x="60" y="130" width="140" height="10" rx="5" fill="#b08dda" opacity="0.6"/>
+  <rect x="50" y="180" width="270" height="90" rx="24" fill="url(#bubbleHot)"/>
+  <rect x="70" y="200" width="200" height="12" rx="6" fill="#fff" opacity="0.9"/>
+  <rect x="70" y="220" width="160" height="12" rx="6" fill="#fff" opacity="0.8"/>
+  <rect x="70" y="240" width="90" height="12" rx="6" fill="#fff" opacity="0.7"/>
+  <rect x="50" y="290" width="300" height="26" rx="13" fill="#fff" stroke="#f0daf9"/>
+  <rect x="360" y="210" width="70" height="70" rx="16" fill="#fff" stroke="#f0daf9"/>
+  <rect x="370" y="222" width="50" height="10" rx="5" fill="#d65ca7" opacity="0.9"/>
+  <rect x="370" y="240" width="40" height="8" rx="4" fill="#d65ca7" opacity="0.6"/>
+  <circle cx="385" cy="90" r="26" fill="#fff" stroke="#f0daf9"/>
+  <rect x="420" y="80" width="30" height="20" rx="10" fill="#d65ca7" opacity="0.5"/>
+</svg>

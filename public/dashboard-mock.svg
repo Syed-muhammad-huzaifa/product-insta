@@ -1,0 +1,28 @@
+<svg width="520" height="340" viewBox="0 0 520 340" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="dashMockTitle">
+  <title id="dashMockTitle">Automation dashboard mock</title>
+  <defs>
+    <linearGradient id="dashBg" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f7f2ff"/>
+      <stop offset="100%" stop-color="#edf8ff"/>
+    </linearGradient>
+    <linearGradient id="metricCard" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fbc8ff"/>
+      <stop offset="100%" stop-color="#b4c5ff"/>
+    </linearGradient>
+  </defs>
+  <rect x="10" y="10" width="500" height="320" rx="36" fill="url(#dashBg)" stroke="#eadffe" stroke-width="2"/>
+  <rect x="40" y="40" width="150" height="32" rx="16" fill="#fff" stroke="#eadffe"/>
+  <rect x="40" y="90" width="440" height="18" rx="9" fill="#e0d3fb"/>
+  <rect x="40" y="118" width="440" height="18" rx="9" fill="#e7e4ff"/>
+  <rect x="40" y="146" width="440" height="18" rx="9" fill="#efefff"/>
+  <rect x="40" y="180" width="140" height="120" rx="22" fill="url(#metricCard)"/>
+  <rect x="60" y="200" width="70" height="10" rx="5" fill="#fff" opacity="0.8"/>
+  <rect x="60" y="220" width="50" height="10" rx="5" fill="#fff" opacity="0.7"/>
+  <rect x="60" y="240" width="50" height="36" rx="10" fill="#fff" opacity="0.6"/>
+  <rect x="200" y="180" width="280" height="120" rx="22" fill="#fff" stroke="#eadffe"/>
+  <rect x="220" y="200" width="240" height="16" rx="8" fill="#b699ff" opacity="0.4"/>
+  <rect x="220" y="224" width="200" height="16" rx="8" fill="#b699ff" opacity="0.3"/>
+  <rect x="220" y="248" width="170" height="16" rx="8" fill="#b699ff" opacity="0.25"/>
+  <rect x="220" y="272" width="120" height="16" rx="8" fill="#b699ff" opacity="0.2"/>
+  <circle cx="440" cy="90" r="24" fill="#fff" stroke="#eadffe"/>
+</svg>
