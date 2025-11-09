@@ -18,7 +18,7 @@ export function Hero() {
             Turn every Instagram DM into a fast, on-brand reply.
           </h1>
           <p className="text-base text-neutral-600">
-            InstaFlow AI responds instantly with pricing, stock, and delivery
+            Shoppal responds instantly with pricing, stock, and delivery
             info so customers get answers without leaving the chat.
           </p>
           <div className="flex flex-col gap-3 sm:flex-row sm:justify-start sm:text-left lg:justify-start">
