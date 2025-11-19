@@ -13,7 +13,7 @@ const bodyFont = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "InstaFlow AI | Instagram DM Assistant",
+  title: "Shoppal | InstaFlow AI | Instagram DM Assistant",
   description:
     "AI-powered Instagram DM agent that responds instantly, shares pricing and delivery info, and turns conversations into orders for small sellers.",
 };
