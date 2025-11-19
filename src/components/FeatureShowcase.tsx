@@ -2,22 +2,22 @@ import Image from "next/image";
 
 const features = [
   {
-    badge: "Memory",
-    title: "Context sticks across every thread",
+    badge: "Context brain",
+    title: "Understands every nuance in the thread",
     description:
-      "Understands the entire conversation—sizes, colors, vouchers—and keeps tone consistent with your brand voice.",
+      "Shoppal keeps track of sizes, currencies, promo codes, and VIP preferences so replies always sound bespoke.",
   },
   {
-    badge: "Intelligence",
-    title: "Offers built from live pricing",
+    badge: "Commerce routing",
+    title: "Pulls live pricing + delivery promises",
     description:
-      "Sync Google Sheets or Notion catalogs. The agent fetches stock, bundles, and add-ons without touching another tool.",
+      "Connect Sheets, Notion, Airtable, or your OMS. The agent references stock levels and upsells bundles without leaving Instagram.",
   },
   {
-    badge: "Handoff",
-    title: "Humans jump in seamlessly",
+    badge: "Concierge control",
+    title: "Humans step in without breaking the vibe",
     description:
-      "Tap to take over, leave notes, and give the chat back to the agent without the buyer noticing the switch.",
+      "Tap to take over, leave notes, and reassign threads. Shoppal logs every action for ops and CX reporting.",
   },
 ];
 
@@ -25,67 +25,57 @@ export function FeatureShowcase() {
   return (
     <section
       id="features"
-      className="rounded-[32px] bg-white px-6 py-16 shadow-[0_50px_120px_rgba(87,0,66,0.08)]"
+      className="rounded-[40px] border border-white/80 bg-white px-6 py-16 shadow-[0_50px_120px_rgba(15,23,42,0.08)]"
     >
-      <div className="mx-auto grid max-w-6xl gap-10 lg:grid-cols-[1.1fr_0.9fr]">
-        <div className="order-2 space-y-6 lg:order-1">
-          <p className="text-xs font-semibold uppercase tracking-[0.5em] text-[#a855f7]">
-            Agent OS
+      <div className="mx-auto grid max-w-6xl gap-12 lg:grid-cols-[0.95fr_1.05fr]">
+        <div className="space-y-6">
+          <p className="text-[11px] font-semibold uppercase tracking-[0.5em] text-neutral-400">
+            Agent operating system
           </p>
-          <h2 className="display-text text-3xl font-semibold text-neutral-900 sm:text-4xl">
-            Designed to feel native inside Instagram, but powered by your data.
+          <h2 className="display-text text-3xl font-semibold text-neutral-900 sm:text-[40px]">
+            Feels native in Instagram, powered by your proprietary data.
           </h2>
           <p className="text-lg text-neutral-600">
-            Every flow is mapped to Instagram etiquette: quick replies, emoji
-            cues, and offer summaries that feel human—not scripted.
+            We mapped every Shoppal response to what Instagram shoppers expect: lightning-fast clarity,
+            empathy in tone, and zero redirects. The agent thinks like your senior stylist.
           </p>
           <div className="space-y-4">
             {features.map((feature) => (
               <article
                 key={feature.title}
-                className="rounded-3xl border border-neutral-100 bg-gradient-to-br from-white to-neutral-50 p-5"
+                className="rounded-3xl border border-neutral-100 bg-neutral-50 p-5 shadow-[0_20px_50px_rgba(15,23,42,0.08)]"
               >
-                <span className="text-xs font-semibold uppercase tracking-[0.4em] text-neutral-400">
+                <span className="text-[11px] font-semibold uppercase tracking-[0.45em] text-neutral-400">
                   {feature.badge}
                 </span>
-                <h3 className="mt-2 text-xl font-semibold text-neutral-900">
-                  {feature.title}
-                </h3>
-                <p className="mt-1 text-sm text-neutral-600">
-                  {feature.description}
-                </p>
+                <h3 className="mt-2 text-xl font-semibold text-neutral-900">{feature.title}</h3>
+                <p className="mt-2 text-sm text-neutral-600">{feature.description}</p>
               </article>
             ))}
           </div>
         </div>
-        <div className="order-1 lg:order-2">
-          <div className="relative flex justify-center">
-            <div className="absolute inset-0 translate-x-6 translate-y-6 rounded-[32px] bg-gradient-to-br from-[#ffd3a1] via-[#f96fb0] to-[#5c4dff] opacity-60 blur-3xl" />
-            <div className="relative rounded-[32px] border border-white/60 bg-white/90 p-4 shadow-[0_40px_80px_rgba(0,0,0,0.12)] backdrop-blur">
-              <Image
-                src="/chat-preview.svg"
-                alt="Chat preview mockup"
-                width={480}
-                height={360}
-                className="w-full"
-              />
-              <div className="mt-4 grid gap-3 text-sm text-neutral-600 sm:grid-cols-2">
-                <div className="rounded-2xl border border-neutral-100 bg-white p-3">
-                  <p className="text-xs uppercase tracking-[0.4em] text-neutral-400">
-                    Flow step
-                  </p>
-                  <p className="mt-2 font-semibold text-neutral-900">
-                    Product discovery
-                  </p>
-                </div>
-                <div className="rounded-2xl border border-neutral-100 bg-white p-3">
-                  <p className="text-xs uppercase tracking-[0.4em] text-neutral-400">
-                    Next
-                  </p>
-                  <p className="mt-2 font-semibold text-neutral-900">
-                    Delivery promise
-                  </p>
-                </div>
+        <div className="relative">
+          <div className="absolute inset-0 translate-x-5 translate-y-5 rounded-[40px] bg-gradient-to-br from-[#f58529]/25 via-[#dd2a7b]/25 to-[#515bd4]/25 blur-3xl" />
+          <div className="relative rounded-[40px] border border-white bg-white p-6 shadow-[0_40px_100px_rgba(15,23,42,0.12)]">
+            <div className="flex items-center justify-between text-xs uppercase tracking-[0.45em] text-neutral-500">
+              <p>Conversation intelligence</p>
+              <span className="rounded-full bg-neutral-900/5 px-3 py-1 text-[10px]">Real time</span>
+            </div>
+            <Image
+              src="/chat-preview.svg"
+              alt="Shoppal conversation preview"
+              width={520}
+              height={360}
+              className="mt-6 w-full"
+            />
+            <div className="mt-6 grid gap-4 sm:grid-cols-2">
+              <div className="rounded-2xl border border-neutral-100 bg-neutral-50 p-4 text-sm text-neutral-600">
+                <p className="text-[11px] uppercase tracking-[0.4em] text-neutral-400">Flow step</p>
+                <p className="mt-1 text-neutral-800">Discovery → offer → delivery promise</p>
+              </div>
+              <div className="rounded-2xl border border-neutral-100 bg-neutral-50 p-4 text-sm text-neutral-600">
+                <p className="text-[11px] uppercase tracking-[0.4em] text-neutral-400">Live data</p>
+                <p className="mt-1 text-neutral-800">Inventory, lookbook, waitlist priority</p>
               </div>
             </div>
           </div>

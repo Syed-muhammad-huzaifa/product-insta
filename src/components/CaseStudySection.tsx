@@ -2,58 +2,53 @@ import Image from "next/image";
 
 export function CaseStudySection() {
   return (
-    <section className="rounded-[32px] bg-gradient-to-br from-[#100624] via-[#1b0b3c] to-[#3a1770] px-6 py-16 text-white shadow-[0_60px_120px_rgba(21,6,50,0.45)]">
-      <div className="mx-auto grid max-w-6xl gap-10 lg:grid-cols-[1.1fr_0.9fr]">
+    <section
+      id="case-study"
+      className="rounded-[40px] border border-white/80 bg-gradient-to-br from-[#fff] via-[#fff3ef] to-[#f5f3ff] px-6 py-16 text-neutral-900 shadow-[0_60px_140px_rgba(245,133,41,0.15)]"
+    >
+      <div className="mx-auto grid max-w-6xl gap-12 lg:grid-cols-[1.05fr_0.95fr]">
         <div className="space-y-6">
-          <p className="text-xs uppercase tracking-[0.5em] text-white/60">
-            Case study
+          <p className="text-[11px] uppercase tracking-[0.5em] text-neutral-500">
+            Case study · Atelier Lune
           </p>
-          <h2 className="display-text text-3xl font-semibold sm:text-4xl">
-            How BakeBay doubled DM conversions during launch weeks
+          <h2 className="display-text text-3xl font-semibold sm:text-[40px]">
+            +52% launch-week revenue by letting Shoppal guard the inbox.
           </h2>
-          <p className="text-lg text-white/80">
-            BakeBay plugs InstaFlow AI into two of their busiest Instagram pages.
-            The agent now handles 1.4K questions every day, qualifies order
-            details, and loops a human in only for payment confirmation.
+          <p className="text-lg text-neutral-600">
+            Two of Atelier Lune&apos;s Instagram boutiques plugged into Shoppal. The agent now answers 1.6K
+            daily questions, qualifies VIP orders, and only flags finance for final confirmation.
           </p>
-          <div className="space-y-4 rounded-3xl border border-white/15 bg-white/10 p-6">
-            <div className="flex items-center justify-between">
+          <div className="space-y-5 rounded-3xl border border-white/70 bg-white/80 p-6 shadow-[0_30px_70px_rgba(15,23,42,0.12)] backdrop-blur">
+            <div className="grid gap-6 sm:grid-cols-3">
               <div>
-                <p className="text-xs uppercase tracking-[0.5em] text-white/60">
-                  Reply time
-                </p>
-                <p className="text-3xl font-semibold">14s</p>
+                <p className="text-[11px] uppercase tracking-[0.4em] text-neutral-400">Reply time</p>
+                <p className="mt-2 text-3xl font-semibold text-neutral-900">11s</p>
               </div>
               <div>
-                <p className="text-xs uppercase tracking-[0.5em] text-white/60">
-                  Order uplift
-                </p>
-                <p className="text-3xl font-semibold">+52%</p>
+                <p className="text-[11px] uppercase tracking-[0.4em] text-neutral-400">Order uplift</p>
+                <p className="mt-2 text-3xl font-semibold text-neutral-900">+52%</p>
               </div>
               <div>
-                <p className="text-xs uppercase tracking-[0.5em] text-white/60">
-                  Ops cost saved
-                </p>
-                <p className="text-3xl font-semibold">$1.4K</p>
+                <p className="text-[11px] uppercase tracking-[0.4em] text-neutral-400">Ops savings / mo</p>
+                <p className="mt-2 text-3xl font-semibold text-neutral-900">$4.1K</p>
               </div>
             </div>
-            <p className="text-sm text-white/70">
-              &ldquo;Launch drops used to mean four of us spamming replies. Now
-              the agent handles it, captures delivery info, and the chat still
-              feels personal.&rdquo; &mdash; Ria, BakeBay founder
+            <p className="text-sm text-neutral-600">
+              &ldquo;Launch drops used to mean four stylists staying up till 3am. With Shoppal we wake up to clean
+              transcripts, tracked orders, and buyers who feel seen.&rdquo; — Mira, Founder
             </p>
           </div>
         </div>
-        <div className="rounded-[28px] border border-white/15 bg-white/5 p-4 backdrop-blur">
+        <div className="rounded-[32px] border border-white/70 bg-white/80 p-5 text-center shadow-[0_35px_90px_rgba(15,23,42,0.12)] backdrop-blur">
           <Image
             src="/dashboard-mock.svg"
-            alt="Case study dashboard"
-            width={520}
-            height={340}
+            alt="Shoppal live dashboard"
+            width={560}
+            height={380}
             className="w-full"
           />
-          <p className="mt-4 text-center text-sm text-white/70">
-            Live view of InstaFlow AI handling BakeBay inquiries
+          <p className="mt-4 text-sm text-neutral-600">
+            Live control room: watch Shoppal qualify buyers and escalate with context.
           </p>
         </div>
       </div>

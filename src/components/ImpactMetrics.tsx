@@ -1,42 +1,47 @@
 const metrics = [
   {
-    label: "DMs auto-answered per day",
-    value: "1.8K",
-    detail: "Average for busy sellers",
+    label: "DMs resolved daily",
+    value: "1.9K",
+    detail: "Average per flagship handle running Shoppal",
+    trend: "+68%",
   },
   {
-    label: "Orders captured inside DMs",
-    value: "73%",
-    detail: "No checkout drop-offs",
+    label: "Revenue closed in DM",
+    value: "8/10",
+    detail: "Orders complete without checkout links",
+    trend: "+43%",
   },
   {
-    label: "Ops cost saved / month",
-    value: "$1.2K",
-    detail: "Versus hiring DM staff",
+    label: "Ops hours returned weekly",
+    value: "38h",
+    detail: "No overnight staffing required",
+    trend: "-5 FTEs",
   },
   {
     label: "CSAT after automation",
     value: "4.9/5",
-    detail: "Buyers love instant replies",
+    detail: "Buyers say it feels human + premium",
+    trend: "+0.7",
   },
 ];
 
 export function ImpactMetrics() {
   return (
-    <section className="rounded-[32px] border border-white/50 bg-white/80 px-6 py-10 shadow-[0_40px_90px_rgba(15,23,42,0.08)]">
+    <section className="rounded-[32px] border border-white/80 bg-white px-6 py-12 shadow-[0_35px_90px_rgba(15,23,42,0.08)]">
       <div className="mx-auto grid max-w-6xl gap-6 sm:grid-cols-2 lg:grid-cols-4">
         {metrics.map((metric) => (
           <article
             key={metric.label}
-            className="rounded-2xl bg-gradient-to-br from-white to-[#f8f2ff] p-6 shadow-[0_20px_40px_rgba(15,23,42,0.05)]"
+            className="rounded-3xl border border-neutral-100 bg-neutral-50/50 p-6 text-left shadow-[0_15px_40px_rgba(15,23,42,0.08)]"
           >
-            <p className="text-xs uppercase tracking-[0.5em] text-[#a855f7]">
+            <p className="text-[11px] uppercase tracking-[0.4em] text-neutral-400">
               {metric.label}
             </p>
-            <p className="mt-4 text-3xl font-semibold text-neutral-900">
-              {metric.value}
-            </p>
-            <p className="mt-2 text-sm text-neutral-500">{metric.detail}</p>
+            <p className="mt-4 text-3xl font-semibold text-neutral-900">{metric.value}</p>
+            <p className="mt-1 text-sm text-neutral-500">{metric.detail}</p>
+            <div className="mt-5 text-xs font-semibold uppercase tracking-[0.45em] text-[#dd2a7b]">
+              {metric.trend}
+            </div>
           </article>
         ))}
       </div>

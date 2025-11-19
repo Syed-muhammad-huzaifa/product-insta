@@ -16,9 +16,14 @@ import { Workflow } from "@/components/Workflow";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-[#fdf3ff] text-neutral-900">
+    <div className="relative min-h-screen overflow-hidden bg-transparent text-neutral-900">
+      <div className="pointer-events-none absolute inset-0">
+        <div className="absolute -left-10 top-10 h-64 w-64 rounded-full bg-[#f58529]/20 blur-[140px]" />
+        <div className="absolute right-0 top-0 h-72 w-72 rounded-full bg-[#dd2a7b]/20 blur-[160px]" />
+        <div className="absolute bottom-0 left-1/2 h-80 w-80 -translate-x-1/2 rounded-full bg-[#515bd4]/20 blur-[180px]" />
+      </div>
       <Navbar />
-      <main className="mx-auto flex max-w-6xl flex-col gap-12 px-4 py-16 sm:px-6">
+      <main className="relative mx-auto flex w-full max-w-6xl flex-col gap-12 px-4 pb-24 pt-10 sm:px-6 lg:gap-16">
         <Hero />
         <LogosStrip />
         <ImpactMetrics />
@@ -33,7 +38,7 @@ export default function Home() {
         <FaqSection />
         <CtaBanner />
       </main>
-      <div className="bg-neutral-900 px-4 pb-10 pt-16">
+      <div className="relative border-t border-neutral-100 bg-white px-4 pb-12 pt-16">
         <Footer />
       </div>
     </div>

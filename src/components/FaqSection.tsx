@@ -23,21 +23,21 @@ const faqs = [
 
 export function FaqSection() {
   return (
-    <section id="faq" className="rounded-[32px] bg-neutral-900 px-6 py-16 text-white">
+    <section id="faq" className="rounded-[40px] border border-white/80 bg-white px-6 py-16 shadow-[0_45px_110px_rgba(15,23,42,0.08)]">
       <div className="mx-auto max-w-4xl text-center">
-        <p className="text-xs uppercase tracking-[0.4em] text-white/60">
+        <p className="text-xs uppercase tracking-[0.4em] text-neutral-400">
           FAQ
         </p>
-        <h2 className="mt-4 text-3xl font-semibold">Answers at a glance</h2>
+        <h2 className="mt-4 text-3xl font-semibold text-neutral-900">Answers at a glance</h2>
       </div>
-      <div className="mx-auto mt-12 space-y-4 max-w-4xl">
+      <div className="mx-auto mt-12 max-w-4xl space-y-4">
         {faqs.map((faq) => (
           <article
             key={faq.question}
-            className="rounded-2xl border border-white/10 bg-white/5 p-6 text-left"
+            className="rounded-2xl border border-neutral-100 bg-neutral-50 p-6 text-left shadow-[0_15px_40px_rgba(15,23,42,0.08)]"
           >
-            <h3 className="text-xl font-semibold">{faq.question}</h3>
-            <p className="mt-2 text-sm text-white/80">{faq.answer}</p>
+            <h3 className="text-xl font-semibold text-neutral-900">{faq.question}</h3>
+            <p className="mt-2 text-sm text-neutral-600">{faq.answer}</p>
           </article>
         ))}
       </div>

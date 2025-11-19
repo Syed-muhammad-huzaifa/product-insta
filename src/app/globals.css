@@ -1,8 +1,13 @@
 @import "tailwindcss";
 
 :root {
-  --background: #04020d;
-  --foreground: #101828;
+  --background: #fffdfc;
+  --foreground: #0f172a;
+  --brand-orange: #f58529;
+  --brand-pink: #dd2a7b;
+  --brand-purple: #515bd4;
+  --brand-sun: #ffd877;
+  --brand-rose: #ff7ab5;
 }
 
 @theme inline {
@@ -13,26 +18,57 @@
 }
 
 body {
-  background: radial-gradient(circle at 20% 20%, #fff4ec, transparent 35%),
-    radial-gradient(circle at 80% 0%, #f1e8ff, transparent 40%),
-    linear-gradient(180deg, #fdfbff 0%, #f4f6ff 60%, #fdf8ff 100%);
-  color: var(--foreground);
-  font-family: var(--font-body), "Plus Jakarta Sans", system-ui, sans-serif;
   min-height: 100vh;
+  background:
+    radial-gradient(circle at 10% 20%, rgba(245, 133, 41, 0.12), transparent 40%),
+    radial-gradient(circle at 90% 0%, rgba(81, 91, 212, 0.12), transparent 45%),
+    radial-gradient(circle at 70% 80%, rgba(221, 42, 123, 0.12), transparent 45%),
+    linear-gradient(180deg, #fffefd 0%, #fff8f2 35%, #f5f5ff 70%, #ffffff 100%);
+  color: var(--foreground);
+  font-family: var(--font-body), "Plus Jakarta Sans", system-ui, -apple-system,
+    BlinkMacSystemFont, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  scroll-behavior: smooth;
 }
 
 h1,
 h2,
 h3,
 .display-text {
-  font-family: var(--font-display), "Space Grotesk", system-ui, sans-serif;
-  letter-spacing: -0.02em;
+  font-family: var(--font-display), "Space Grotesk", "Sora", system-ui,
+    sans-serif;
+  letter-spacing: -0.03em;
+  color: var(--foreground);
 }
 
 .glass-panel {
-  background: rgba(255, 255, 255, 0.7);
-  border: 1px solid rgba(255, 255, 255, 0.4);
+  background: rgba(255, 255, 255, 0.85);
+  border: 1px solid rgba(15, 23, 42, 0.06);
+  box-shadow: 0 20px 60px rgba(15, 23, 42, 0.1);
   backdrop-filter: blur(16px);
+}
+
+.gradient-border {
+  position: relative;
+  border-radius: 32px;
+}
+
+.gradient-border::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  padding: 1px;
+  border-radius: inherit;
+  background: linear-gradient(135deg, var(--brand-orange), var(--brand-purple));
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+          mask-composite: exclude;
+}
+
+.gradient-border > * {
+  position: relative;
 }
 
 @keyframes fade-up {
@@ -56,4 +92,20 @@ h3,
 
 .animate-delay-2 {
   animation-delay: 0.3s;
+}
+
+@keyframes float-soft {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.animate-float-soft {
+  animation: float-soft 6s ease-in-out infinite;
 }
